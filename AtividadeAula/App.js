@@ -27,7 +27,7 @@ function gerarIntAleatorio(min, max) {
     setImage(require('./images/biscoitoQuebrado.png'));
   }
 
-  const resetarBiscoito = () => {
+  const reiniciarBiscoito = () => {
     setText('');
     setImage(require('./images/biscoito.png'));
   }
@@ -39,7 +39,7 @@ function gerarIntAleatorio(min, max) {
       <Image source={require('./images/biscoito.png')} />
       <Text style={styles.text}>{text}</Text>
       <Button color='green' mode="container" onPress={quebrarBiscoito} title="Quebrar Biscoito"></Button>
-      <Button color='blue' style={styles.button} mode="contained" onPress={resetarBiscoito} title="Tentar Novamente"></Button>
+      <Button color='blue' style={styles.button} mode="contained" onPress={reiniciarBiscoito} title="Tentar Novamente"></Button>
     </View>
     </SafeAreaView>
   );
